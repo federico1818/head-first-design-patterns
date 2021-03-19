@@ -2,11 +2,11 @@ package sim
 
 class Duck {
 
-    fun quack() {
+    public fun quack() {
         println("Quack!!")
     }
 
-    fun swim() {
+    public fun swim() {
         println("I'm swimming")
     }
 }
