@@ -1,3 +1,6 @@
+import sim.Duck
+
 fun main() {
-    println("Hello")
+    var lucas: Duck = Duck()
+    lucas.quack()
 }
