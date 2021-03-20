@@ -1,6 +1,6 @@
 package sim
 
-class Duck {
+open abstract class Duck {
 
     public fun quack() {
         println("Quack!!")
@@ -9,4 +9,6 @@ class Duck {
     public fun swim() {
         println("I'm swimming")
     }
+
+    abstract fun display()
 }
