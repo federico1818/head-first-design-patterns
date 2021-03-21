@@ -1,6 +1,8 @@
 package sim
 
 open abstract class Duck {
+    protected abstract val flyBehavior: FlyBehavior
+    public abstract fun display()
 
     public fun quack() {
         println("Quack!!")
@@ -10,5 +12,7 @@ open abstract class Duck {
         println("I'm swimming")
     }
 
-    abstract fun display()
+    public fun performFly() {
+        this.flyBehavior.fly()
+    }
 }
